@@ -11,6 +11,7 @@
 		3D25D8D51AF6E67200E72D67 /* Handler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D25D8D31AF6E67200E72D67 /* Handler.cpp */; };
 		3D25D8D81AF6E6E300E72D67 /* Request.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D25D8D61AF6E6E300E72D67 /* Request.cpp */; };
 		3D25D8DB1AF6E9CB00E72D67 /* NullHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D25D8D91AF6E9CB00E72D67 /* NullHandler.cpp */; };
+		3D25D8DE1AF6ED3D00E72D67 /* IPv4Request.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D25D8DC1AF6ED3D00E72D67 /* IPv4Request.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		3D25D8D71AF6E6E300E72D67 /* Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Request.h; path = Requests/Request.h; sourceTree = "<group>"; };
 		3D25D8D91AF6E9CB00E72D67 /* NullHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NullHandler.cpp; path = Handlers/NullHandler.cpp; sourceTree = "<group>"; };
 		3D25D8DA1AF6E9CB00E72D67 /* NullHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NullHandler.h; path = Handlers/NullHandler.h; sourceTree = "<group>"; };
+		3D25D8DC1AF6ED3D00E72D67 /* IPv4Request.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IPv4Request.cpp; path = Requests/IPv4Request.cpp; sourceTree = "<group>"; };
+		3D25D8DD1AF6ED3D00E72D67 /* IPv4Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IPv4Request.h; path = Requests/IPv4Request.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 			children = (
 				3D25D8D61AF6E6E300E72D67 /* Request.cpp */,
 				3D25D8D71AF6E6E300E72D67 /* Request.h */,
+				3D25D8DC1AF6ED3D00E72D67 /* IPv4Request.cpp */,
+				3D25D8DD1AF6ED3D00E72D67 /* IPv4Request.h */,
 			);
 			name = Requests;
 			sourceTree = "<group>";
@@ -151,6 +156,7 @@
 			files = (
 				3D25D8D81AF6E6E300E72D67 /* Request.cpp in Sources */,
 				3D25D8DB1AF6E9CB00E72D67 /* NullHandler.cpp in Sources */,
+				3D25D8DE1AF6ED3D00E72D67 /* IPv4Request.cpp in Sources */,
 				3D25D8D51AF6E67200E72D67 /* Handler.cpp in Sources */,
 				3D25D8CB1AF6DC7D00E72D67 /* main.cpp in Sources */,
 			);

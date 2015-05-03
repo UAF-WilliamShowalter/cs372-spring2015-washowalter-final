@@ -10,14 +10,15 @@
 #define __Final_WAShowalter__Handler__
 
 #include <stdio.h>
+#include <memory>
 #include "Request.h"
 
 class Handler {
 public:
-	~Handler() = default;
+	virtual ~Handler() = default;
 
 	virtual void handleRequest(Request) = 0;
-	virtual void setSuccessor(Handler &successor) = 0;
+	virtual void setSuccessor(std::unique_ptr<Handler> successor) = 0;
 
 private:
 };

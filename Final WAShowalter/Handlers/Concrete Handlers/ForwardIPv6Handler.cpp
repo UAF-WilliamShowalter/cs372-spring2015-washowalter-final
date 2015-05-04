@@ -12,7 +12,7 @@
 
 void ForwardIPv6Handler::handleRequest(std::unique_ptr<Request> r) {
 	if (r->getType() == "IPv6" && r->getDirection() == FORWARD){
-		_logObserver->notify("Request fell of end of chain: ");
+		_logObserver->notify("Handled by ForwardIPv6Handler");
 	}
 	else {
 		std::unique_ptr<Handler> nullHandler = std::make_unique<NullHandler>();

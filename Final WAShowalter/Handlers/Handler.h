@@ -19,8 +19,7 @@ public:
 	virtual ~Handler() = default;
 
 	virtual void handleRequest(std::unique_ptr<Request> r) = 0;
-	virtual void setSuccessor(std::unique_ptr<Handler> successor) = 0;
-
+	
 	// HandlerObserver Records the logs (ie, simulated actions) of the firewall
 	// It's away of avoiding writing my already contrived handlers with cout statements in the class.
 	// And allows for an easier mechanism for testing.

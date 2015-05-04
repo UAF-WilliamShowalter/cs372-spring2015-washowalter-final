@@ -21,6 +21,18 @@
 		3D25D8F91AF6FC7100E72D67 /* Request.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D25D8D61AF6E6E300E72D67 /* Request.cpp */; };
 		3D25D8FA1AF6FC7500E72D67 /* NullHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D25D8D91AF6E9CB00E72D67 /* NullHandler.cpp */; };
 		3D25D8FB1AF6FC7800E72D67 /* Handler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D25D8D31AF6E67200E72D67 /* Handler.cpp */; };
+		3D25D8FF1AF7035900E72D67 /* InputIPv4Handler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D25D8FD1AF7035900E72D67 /* InputIPv4Handler.cpp */; };
+		3D25D9001AF7035900E72D67 /* InputIPv4Handler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D25D8FD1AF7035900E72D67 /* InputIPv4Handler.cpp */; };
+		3D25D9031AF7036A00E72D67 /* InputIPv6Handler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D25D9011AF7036A00E72D67 /* InputIPv6Handler.cpp */; };
+		3D25D9041AF7036A00E72D67 /* InputIPv6Handler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D25D9011AF7036A00E72D67 /* InputIPv6Handler.cpp */; };
+		3D25D9071AF7037600E72D67 /* OutputIPv4Handler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D25D9051AF7037600E72D67 /* OutputIPv4Handler.cpp */; };
+		3D25D9081AF7037600E72D67 /* OutputIPv4Handler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D25D9051AF7037600E72D67 /* OutputIPv4Handler.cpp */; };
+		3D25D90B1AF7038800E72D67 /* OutputIPv6Handler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D25D9091AF7038800E72D67 /* OutputIPv6Handler.cpp */; };
+		3D25D90C1AF7038800E72D67 /* OutputIPv6Handler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D25D9091AF7038800E72D67 /* OutputIPv6Handler.cpp */; };
+		3D25D90F1AF7039500E72D67 /* ForwardIPv4Handler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D25D90D1AF7039500E72D67 /* ForwardIPv4Handler.cpp */; };
+		3D25D9101AF7039500E72D67 /* ForwardIPv4Handler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D25D90D1AF7039500E72D67 /* ForwardIPv4Handler.cpp */; };
+		3D25D9131AF703AE00E72D67 /* ForwardIPv6Handler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D25D9111AF703AE00E72D67 /* ForwardIPv6Handler.cpp */; };
+		3D25D9141AF703AE00E72D67 /* ForwardIPv6Handler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D25D9111AF703AE00E72D67 /* ForwardIPv6Handler.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -62,6 +74,18 @@
 		3D25D8F21AF6F74300E72D67 /* catch.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = catch.hpp; path = Catch/single_include/catch.hpp; sourceTree = "<group>"; };
 		3D25D8F31AF6FABA00E72D67 /* HandlerObserver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HandlerObserver.cpp; path = "Observer & Testing/HandlerObserver.cpp"; sourceTree = "<group>"; };
 		3D25D8F41AF6FABA00E72D67 /* HandlerObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HandlerObserver.h; path = "Observer & Testing/HandlerObserver.h"; sourceTree = "<group>"; };
+		3D25D8FD1AF7035900E72D67 /* InputIPv4Handler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = InputIPv4Handler.cpp; path = "Handlers/Concrete Handlers/InputIPv4Handler.cpp"; sourceTree = "<group>"; };
+		3D25D8FE1AF7035900E72D67 /* InputIPv4Handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InputIPv4Handler.h; path = "Handlers/Concrete Handlers/InputIPv4Handler.h"; sourceTree = "<group>"; };
+		3D25D9011AF7036A00E72D67 /* InputIPv6Handler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = InputIPv6Handler.cpp; path = "Handlers/Concrete Handlers/InputIPv6Handler.cpp"; sourceTree = "<group>"; };
+		3D25D9021AF7036A00E72D67 /* InputIPv6Handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InputIPv6Handler.h; path = "Handlers/Concrete Handlers/InputIPv6Handler.h"; sourceTree = "<group>"; };
+		3D25D9051AF7037600E72D67 /* OutputIPv4Handler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OutputIPv4Handler.cpp; path = "Handlers/Concrete Handlers/OutputIPv4Handler.cpp"; sourceTree = "<group>"; };
+		3D25D9061AF7037600E72D67 /* OutputIPv4Handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OutputIPv4Handler.h; path = "Handlers/Concrete Handlers/OutputIPv4Handler.h"; sourceTree = "<group>"; };
+		3D25D9091AF7038800E72D67 /* OutputIPv6Handler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OutputIPv6Handler.cpp; path = "Handlers/Concrete Handlers/OutputIPv6Handler.cpp"; sourceTree = "<group>"; };
+		3D25D90A1AF7038800E72D67 /* OutputIPv6Handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OutputIPv6Handler.h; path = "Handlers/Concrete Handlers/OutputIPv6Handler.h"; sourceTree = "<group>"; };
+		3D25D90D1AF7039500E72D67 /* ForwardIPv4Handler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ForwardIPv4Handler.cpp; path = "Handlers/Concrete Handlers/ForwardIPv4Handler.cpp"; sourceTree = "<group>"; };
+		3D25D90E1AF7039500E72D67 /* ForwardIPv4Handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ForwardIPv4Handler.h; path = "Handlers/Concrete Handlers/ForwardIPv4Handler.h"; sourceTree = "<group>"; };
+		3D25D9111AF703AE00E72D67 /* ForwardIPv6Handler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ForwardIPv6Handler.cpp; path = "Handlers/Concrete Handlers/ForwardIPv6Handler.cpp"; sourceTree = "<group>"; };
+		3D25D9121AF703AE00E72D67 /* ForwardIPv6Handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ForwardIPv6Handler.h; path = "Handlers/Concrete Handlers/ForwardIPv6Handler.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +137,7 @@
 		3D25D8D11AF6E64000E72D67 /* Handlers */ = {
 			isa = PBXGroup;
 			children = (
+				3D25D8FC1AF7032500E72D67 /* Concrete Handlers */,
 				3D25D8D31AF6E67200E72D67 /* Handler.cpp */,
 				3D25D8D41AF6E67200E72D67 /* Handler.h */,
 				3D25D8D91AF6E9CB00E72D67 /* NullHandler.cpp */,
@@ -143,6 +168,25 @@
 				3D25D8F41AF6FABA00E72D67 /* HandlerObserver.h */,
 			);
 			name = "Observer & Testing";
+			sourceTree = "<group>";
+		};
+		3D25D8FC1AF7032500E72D67 /* Concrete Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				3D25D8FD1AF7035900E72D67 /* InputIPv4Handler.cpp */,
+				3D25D8FE1AF7035900E72D67 /* InputIPv4Handler.h */,
+				3D25D9011AF7036A00E72D67 /* InputIPv6Handler.cpp */,
+				3D25D9021AF7036A00E72D67 /* InputIPv6Handler.h */,
+				3D25D9051AF7037600E72D67 /* OutputIPv4Handler.cpp */,
+				3D25D9061AF7037600E72D67 /* OutputIPv4Handler.h */,
+				3D25D9091AF7038800E72D67 /* OutputIPv6Handler.cpp */,
+				3D25D90A1AF7038800E72D67 /* OutputIPv6Handler.h */,
+				3D25D90D1AF7039500E72D67 /* ForwardIPv4Handler.cpp */,
+				3D25D90E1AF7039500E72D67 /* ForwardIPv4Handler.h */,
+				3D25D9111AF703AE00E72D67 /* ForwardIPv6Handler.cpp */,
+				3D25D9121AF703AE00E72D67 /* ForwardIPv6Handler.h */,
+			);
+			name = "Concrete Handlers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,12 +266,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D25D9071AF7037600E72D67 /* OutputIPv4Handler.cpp in Sources */,
+				3D25D9131AF703AE00E72D67 /* ForwardIPv6Handler.cpp in Sources */,
+				3D25D90F1AF7039500E72D67 /* ForwardIPv4Handler.cpp in Sources */,
 				3D25D8E11AF6F00D00E72D67 /* IPv6Request.cpp in Sources */,
 				3D25D8D81AF6E6E300E72D67 /* Request.cpp in Sources */,
+				3D25D9031AF7036A00E72D67 /* InputIPv6Handler.cpp in Sources */,
 				3D25D8DB1AF6E9CB00E72D67 /* NullHandler.cpp in Sources */,
+				3D25D90B1AF7038800E72D67 /* OutputIPv6Handler.cpp in Sources */,
 				3D25D8DE1AF6ED3D00E72D67 /* IPv4Request.cpp in Sources */,
 				3D25D8D51AF6E67200E72D67 /* Handler.cpp in Sources */,
 				3D25D8CB1AF6DC7D00E72D67 /* main.cpp in Sources */,
+				3D25D8FF1AF7035900E72D67 /* InputIPv4Handler.cpp in Sources */,
 				3D25D8F51AF6FABA00E72D67 /* HandlerObserver.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,12 +286,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D25D9081AF7037600E72D67 /* OutputIPv4Handler.cpp in Sources */,
+				3D25D9141AF703AE00E72D67 /* ForwardIPv6Handler.cpp in Sources */,
+				3D25D9101AF7039500E72D67 /* ForwardIPv4Handler.cpp in Sources */,
 				3D25D8F81AF6FC6F00E72D67 /* IPv4Request.cpp in Sources */,
 				3D25D8F91AF6FC7100E72D67 /* Request.cpp in Sources */,
+				3D25D9041AF7036A00E72D67 /* InputIPv6Handler.cpp in Sources */,
 				3D25D8F71AF6FC6D00E72D67 /* IPv6Request.cpp in Sources */,
+				3D25D90C1AF7038800E72D67 /* OutputIPv6Handler.cpp in Sources */,
 				3D25D8F61AF6FABA00E72D67 /* HandlerObserver.cpp in Sources */,
 				3D25D8FB1AF6FC7800E72D67 /* Handler.cpp in Sources */,
 				3D25D8F11AF6F68300E72D67 /* CatchMain.cpp in Sources */,
+				3D25D9001AF7035900E72D67 /* InputIPv4Handler.cpp in Sources */,
 				3D25D8FA1AF6FC7500E72D67 /* NullHandler.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

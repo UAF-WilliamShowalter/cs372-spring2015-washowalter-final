@@ -8,8 +8,15 @@
 
 #include <iostream>
 
+// Chain of Responsibility Pattern
+// Chain goes as follows:
+/*
+	InputIPv4Handler -> InputIPv6Handler -> OutputIPv4Handler -> OutputIPv6Handler ->
+ ForwardIPv4Handler ->  ForwardIPv6Handler -> NullHandler
+
+	NullHandler is an implementation of the Null Object design pattern.
+ */
+
 int main(int argc, const char * argv[]) {
-	// insert code here...
-	std::cout << "Hello, World!\n";
     return 0;
 }

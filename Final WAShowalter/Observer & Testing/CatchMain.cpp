@@ -24,6 +24,7 @@ using std::remove;
 #include <memory>
 using std::make_shared;
 using std::make_unique;
+using std::unique_ptr;
 using std::shared_ptr;
 
 #include "HandlerObserver.h"
@@ -36,7 +37,14 @@ using std::shared_ptr;
 
 TEST_CASE("Chain of Responsibility Firewall", "Final")
 {
-	HandlerObserver logReporter;
-	
-	REQUIRE(0==0);
+	// TEST 1 -- NULLHANDLER
+	shared_ptr<HandlerObserver> logReporter1 = make_shared<HandlerObserver>();
+	unique_ptr<NullHandler> null1 = make_unique<NullHandler>();
+
+	null1->registerLogObserver(logReporter1);
+	null1->handleRequest(make_unique<IPv4Request>(INPUT, "192.168.1.1", "192.168.2.1", "DATA MESSAGE"));
+
+	REQUIRE(logReporter1->getLogs() == "Request fell of end of chain: \n");
+
+
 }

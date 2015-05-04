@@ -35,6 +35,8 @@
 		3D25D9141AF703AE00E72D67 /* ForwardIPv6Handler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D25D9111AF703AE00E72D67 /* ForwardIPv6Handler.cpp */; };
 		3D25D9171AF70BF400E72D67 /* UnsupportedProtocolRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D25D9151AF70BF400E72D67 /* UnsupportedProtocolRequest.cpp */; };
 		3D25D9181AF70BF400E72D67 /* UnsupportedProtocolRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D25D9151AF70BF400E72D67 /* UnsupportedProtocolRequest.cpp */; };
+		3D25D91B1AF719A700E72D67 /* RequestFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D25D9191AF719A700E72D67 /* RequestFactory.cpp */; };
+		3D25D91C1AF719A700E72D67 /* RequestFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D25D9191AF719A700E72D67 /* RequestFactory.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -90,6 +92,8 @@
 		3D25D9121AF703AE00E72D67 /* ForwardIPv6Handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ForwardIPv6Handler.h; path = "Handlers/Concrete Handlers/ForwardIPv6Handler.h"; sourceTree = "<group>"; };
 		3D25D9151AF70BF400E72D67 /* UnsupportedProtocolRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = UnsupportedProtocolRequest.cpp; path = Requests/UnsupportedProtocolRequest.cpp; sourceTree = "<group>"; };
 		3D25D9161AF70BF400E72D67 /* UnsupportedProtocolRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UnsupportedProtocolRequest.h; path = Requests/UnsupportedProtocolRequest.h; sourceTree = "<group>"; };
+		3D25D9191AF719A700E72D67 /* RequestFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RequestFactory.cpp; sourceTree = "<group>"; };
+		3D25D91A1AF719A700E72D67 /* RequestFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestFactory.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +138,8 @@
 				3D25D8D21AF6E64900E72D67 /* Requests */,
 				3D25D8E21AF6F32400E72D67 /* Observer & Testing */,
 				3D25D8CA1AF6DC7D00E72D67 /* main.cpp */,
+				3D25D9191AF719A700E72D67 /* RequestFactory.cpp */,
+				3D25D91A1AF719A700E72D67 /* RequestFactory.h */,
 			);
 			path = "Final WAShowalter";
 			sourceTree = "<group>";
@@ -278,6 +284,7 @@
 				3D25D9171AF70BF400E72D67 /* UnsupportedProtocolRequest.cpp in Sources */,
 				3D25D8E11AF6F00D00E72D67 /* IPv6Request.cpp in Sources */,
 				3D25D8D81AF6E6E300E72D67 /* Request.cpp in Sources */,
+				3D25D91B1AF719A700E72D67 /* RequestFactory.cpp in Sources */,
 				3D25D9031AF7036A00E72D67 /* InputIPv6Handler.cpp in Sources */,
 				3D25D8DB1AF6E9CB00E72D67 /* NullHandler.cpp in Sources */,
 				3D25D90B1AF7038800E72D67 /* OutputIPv6Handler.cpp in Sources */,
@@ -299,6 +306,7 @@
 				3D25D9181AF70BF400E72D67 /* UnsupportedProtocolRequest.cpp in Sources */,
 				3D25D8F81AF6FC6F00E72D67 /* IPv4Request.cpp in Sources */,
 				3D25D8F91AF6FC7100E72D67 /* Request.cpp in Sources */,
+				3D25D91C1AF719A700E72D67 /* RequestFactory.cpp in Sources */,
 				3D25D9041AF7036A00E72D67 /* InputIPv6Handler.cpp in Sources */,
 				3D25D8F71AF6FC6D00E72D67 /* IPv6Request.cpp in Sources */,
 				3D25D90C1AF7038800E72D67 /* OutputIPv6Handler.cpp in Sources */,

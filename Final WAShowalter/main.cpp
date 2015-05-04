@@ -45,6 +45,7 @@ using std::move;
 #include "ForwardIPv4Handler.h"
 #include "ForwardIPv6Handler.h"
 #include "UnsupportedProtocolRequest.h"
+#include "RequestFactory.h"
 
 int main(int argc, const char * argv[]) {
 
@@ -71,13 +72,13 @@ int main(int argc, const char * argv[]) {
 	handler->setSuccessor(move(handler2));
 
 	// Setup requests
-	unique_ptr<Request> ipv4Input = make_unique<IPv4Request>(INPUT, "192.168.1.1", "192.168.2.1", "DATA MESSAGE");
-	unique_ptr<Request> ipv6Input = make_unique<IPv6Request>(INPUT, "FE80::0", "FE81::0", "DATA MESSAGE");
-	unique_ptr<Request> ipv4Output = make_unique<IPv4Request>(OUTPUT, "192.168.1.1", "192.168.2.1", "DATA MESSAGE");
-	unique_ptr<Request> ipv6Output = make_unique<IPv6Request>(OUTPUT, "FE80::0", "FE81::0", "DATA MESSAGE");
-	unique_ptr<Request> ipv4Forward = make_unique<IPv4Request>(FORWARD, "192.168.1.1", "192.168.2.1", "DATA MESSAGE");
-	unique_ptr<Request> ipv6Forward = make_unique<IPv6Request>(FORWARD, "FE80::0", "FE81::0", "DATA MESSAGE");
-	unique_ptr<Request> unsupported = make_unique<UnsupportedProtocolRequest>(INPUT, "**/n1`/**", "**/n2`/**", "DATA MESSAGE");
+	auto ipv4Input = RequestFactory::makeRequest("IPv4",INPUT, "192.168.1.1", "192.168.2.1", "DATA MESSAGE");
+	auto ipv6Input = RequestFactory::makeRequest("IPv6",INPUT, "FE80::0", "FE81::0", "DATA MESSAGE");
+	auto ipv4Output = RequestFactory::makeRequest("IPv4",OUTPUT, "192.168.1.1", "192.168.2.1", "DATA MESSAGE");
+	auto ipv6Output = RequestFactory::makeRequest("IPv6",OUTPUT, "FE80::0", "FE81::0", "DATA MESSAGE");
+	auto ipv4Forward = RequestFactory::makeRequest("IPv4",FORWARD, "192.168.1.1", "192.168.2.1", "DATA MESSAGE");
+	auto ipv6Forward = RequestFactory::makeRequest("IPv6",FORWARD, "FE80::0", "FE81::0", "DATA MESSAGE");
+	auto unsupported = RequestFactory::makeRequest("NOTSUP",INPUT, "**/n1`/**", "**/n2`/**", "DATA MESSAGE");
 
 	// Execute example requests
 	handler->handleRequest(move(ipv4Input));
@@ -92,16 +93,14 @@ int main(int argc, const char * argv[]) {
 
 	logReporter3->clearLogs();
 
-	// Setup new requests -- unique pointers
-
-	// Setup requests
-	ipv4Input = make_unique<IPv4Request>(INPUT, "192.168.1.1", "192.168.2.1", "DATA MESSAGE");
-	ipv6Input = make_unique<IPv6Request>(INPUT, "FE80::0", "FE81::0", "DATA MESSAGE");
-	ipv4Output = make_unique<IPv4Request>(OUTPUT, "192.168.1.1", "192.168.2.1", "DATA MESSAGE");
-	ipv6Output = make_unique<IPv6Request>(OUTPUT, "FE80::0", "FE81::0", "DATA MESSAGE");
-	ipv4Forward = make_unique<IPv4Request>(FORWARD, "192.168.1.1", "192.168.2.1", "DATA MESSAGE");
-	ipv6Forward = make_unique<IPv6Request>(FORWARD, "FE80::0", "FE81::0", "DATA MESSAGE");
-	unsupported = make_unique<UnsupportedProtocolRequest>(INPUT, "**/n1`/**", "**/n2`/**", "DATA MESSAGE");
+	// Setup new requests -- unique pointers, previously moved
+	ipv4Input = RequestFactory::makeRequest("IPv4",INPUT, "192.168.1.1", "192.168.2.1", "DATA MESSAGE");
+	ipv6Input = RequestFactory::makeRequest("IPv6",INPUT, "FE80::0", "FE81::0", "DATA MESSAGE");
+	ipv4Output = RequestFactory::makeRequest("IPv4",OUTPUT, "192.168.1.1", "192.168.2.1", "DATA MESSAGE");
+	ipv6Output = RequestFactory::makeRequest("IPv6",OUTPUT, "FE80::0", "FE81::0", "DATA MESSAGE");
+	ipv4Forward = RequestFactory::makeRequest("IPv4",FORWARD, "192.168.1.1", "192.168.2.1", "DATA MESSAGE");
+	ipv6Forward = RequestFactory::makeRequest("IPv6",FORWARD, "FE80::0", "FE81::0", "DATA MESSAGE");
+	unsupported = RequestFactory::makeRequest("NOTSUP",INPUT, "**/n1`/**", "**/n2`/**", "DATA MESSAGE");
 
 	// Execute example requests
 	handler->handleRequest(move(unsupported));

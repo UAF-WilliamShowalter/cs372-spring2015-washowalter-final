@@ -14,6 +14,13 @@
 		3D25D8DE1AF6ED3D00E72D67 /* IPv4Request.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D25D8DC1AF6ED3D00E72D67 /* IPv4Request.cpp */; };
 		3D25D8E11AF6F00D00E72D67 /* IPv6Request.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D25D8DF1AF6F00D00E72D67 /* IPv6Request.cpp */; };
 		3D25D8F11AF6F68300E72D67 /* CatchMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D25D8E41AF6F43600E72D67 /* CatchMain.cpp */; };
+		3D25D8F51AF6FABA00E72D67 /* HandlerObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D25D8F31AF6FABA00E72D67 /* HandlerObserver.cpp */; };
+		3D25D8F61AF6FABA00E72D67 /* HandlerObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D25D8F31AF6FABA00E72D67 /* HandlerObserver.cpp */; };
+		3D25D8F71AF6FC6D00E72D67 /* IPv6Request.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D25D8DF1AF6F00D00E72D67 /* IPv6Request.cpp */; };
+		3D25D8F81AF6FC6F00E72D67 /* IPv4Request.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D25D8DC1AF6ED3D00E72D67 /* IPv4Request.cpp */; };
+		3D25D8F91AF6FC7100E72D67 /* Request.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D25D8D61AF6E6E300E72D67 /* Request.cpp */; };
+		3D25D8FA1AF6FC7500E72D67 /* NullHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D25D8D91AF6E9CB00E72D67 /* NullHandler.cpp */; };
+		3D25D8FB1AF6FC7800E72D67 /* Handler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D25D8D31AF6E67200E72D67 /* Handler.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -53,6 +60,8 @@
 		3D25D8E41AF6F43600E72D67 /* CatchMain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CatchMain.cpp; path = "Observer & Testing/CatchMain.cpp"; sourceTree = "<group>"; };
 		3D25D8EA1AF6F67500E72D67 /* Final WAShowalter Catch */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Final WAShowalter Catch"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D25D8F21AF6F74300E72D67 /* catch.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = catch.hpp; path = Catch/single_include/catch.hpp; sourceTree = "<group>"; };
+		3D25D8F31AF6FABA00E72D67 /* HandlerObserver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HandlerObserver.cpp; path = "Observer & Testing/HandlerObserver.cpp"; sourceTree = "<group>"; };
+		3D25D8F41AF6FABA00E72D67 /* HandlerObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HandlerObserver.h; path = "Observer & Testing/HandlerObserver.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +139,8 @@
 			children = (
 				3D25D8F21AF6F74300E72D67 /* catch.hpp */,
 				3D25D8E41AF6F43600E72D67 /* CatchMain.cpp */,
+				3D25D8F31AF6FABA00E72D67 /* HandlerObserver.cpp */,
+				3D25D8F41AF6FABA00E72D67 /* HandlerObserver.h */,
 			);
 			name = "Observer & Testing";
 			sourceTree = "<group>";
@@ -217,6 +228,7 @@
 				3D25D8DE1AF6ED3D00E72D67 /* IPv4Request.cpp in Sources */,
 				3D25D8D51AF6E67200E72D67 /* Handler.cpp in Sources */,
 				3D25D8CB1AF6DC7D00E72D67 /* main.cpp in Sources */,
+				3D25D8F51AF6FABA00E72D67 /* HandlerObserver.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,7 +236,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D25D8F81AF6FC6F00E72D67 /* IPv4Request.cpp in Sources */,
+				3D25D8F91AF6FC7100E72D67 /* Request.cpp in Sources */,
+				3D25D8F71AF6FC6D00E72D67 /* IPv6Request.cpp in Sources */,
+				3D25D8F61AF6FABA00E72D67 /* HandlerObserver.cpp in Sources */,
+				3D25D8FB1AF6FC7800E72D67 /* Handler.cpp in Sources */,
 				3D25D8F11AF6F68300E72D67 /* CatchMain.cpp in Sources */,
+				3D25D8FA1AF6FC7500E72D67 /* NullHandler.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

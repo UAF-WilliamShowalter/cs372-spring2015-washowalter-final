@@ -26,9 +26,17 @@ using std::make_shared;
 using std::make_unique;
 using std::shared_ptr;
 
+#include "HandlerObserver.h"
+#include "Request.h"
+#include "IPv4Request.h"
+#include "IPv6Request.h"
+#include "Handler.h"
+#include "NullHandler.h"
+
 
 TEST_CASE("Chain of Responsibility Firewall", "Final")
 {
+	HandlerObserver logReporter;
 	
 	REQUIRE(0==0);
 }

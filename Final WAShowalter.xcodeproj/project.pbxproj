@@ -12,6 +12,7 @@
 		3D25D8D81AF6E6E300E72D67 /* Request.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D25D8D61AF6E6E300E72D67 /* Request.cpp */; };
 		3D25D8DB1AF6E9CB00E72D67 /* NullHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D25D8D91AF6E9CB00E72D67 /* NullHandler.cpp */; };
 		3D25D8DE1AF6ED3D00E72D67 /* IPv4Request.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D25D8DC1AF6ED3D00E72D67 /* IPv4Request.cpp */; };
+		3D25D8E11AF6F00D00E72D67 /* IPv6Request.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D25D8DF1AF6F00D00E72D67 /* IPv6Request.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +38,8 @@
 		3D25D8DA1AF6E9CB00E72D67 /* NullHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NullHandler.h; path = Handlers/NullHandler.h; sourceTree = "<group>"; };
 		3D25D8DC1AF6ED3D00E72D67 /* IPv4Request.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IPv4Request.cpp; path = Requests/IPv4Request.cpp; sourceTree = "<group>"; };
 		3D25D8DD1AF6ED3D00E72D67 /* IPv4Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IPv4Request.h; path = Requests/IPv4Request.h; sourceTree = "<group>"; };
+		3D25D8DF1AF6F00D00E72D67 /* IPv6Request.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IPv6Request.cpp; path = Requests/IPv6Request.cpp; sourceTree = "<group>"; };
+		3D25D8E01AF6F00D00E72D67 /* IPv6Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IPv6Request.h; path = Requests/IPv6Request.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,8 @@
 				3D25D8D71AF6E6E300E72D67 /* Request.h */,
 				3D25D8DC1AF6ED3D00E72D67 /* IPv4Request.cpp */,
 				3D25D8DD1AF6ED3D00E72D67 /* IPv4Request.h */,
+				3D25D8DF1AF6F00D00E72D67 /* IPv6Request.cpp */,
+				3D25D8E01AF6F00D00E72D67 /* IPv6Request.h */,
 			);
 			name = Requests;
 			sourceTree = "<group>";
@@ -154,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D25D8E11AF6F00D00E72D67 /* IPv6Request.cpp in Sources */,
 				3D25D8D81AF6E6E300E72D67 /* Request.cpp in Sources */,
 				3D25D8DB1AF6E9CB00E72D67 /* NullHandler.cpp in Sources */,
 				3D25D8DE1AF6ED3D00E72D67 /* IPv4Request.cpp in Sources */,

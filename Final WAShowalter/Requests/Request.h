@@ -21,12 +21,20 @@ class Request {
 public:
 	virtual ~Request() = default;
 	virtual std::string getType() = 0;
-	virtual DIRECTION getDirection() = 0;
-	virtual std::string getSource() = 0;
-	virtual std::string getDest() = 0;
-	virtual std::string getMessage() = 0;
+	virtual DIRECTION getDirection();
+	virtual std::string getSource();
+	virtual std::string getDest();
+	virtual std::string getMessage();
 
+	void setDirection(DIRECTION);
+	void setSource(std::string);
+	void setDest(std::string);
+	void setMessage(std::string);
 private:
+	DIRECTION _direction;
+	std::string _source;
+	std::string _dest;
+	std::string _message;
 };
 
 #endif /* defined(__Final_WAShowalter__Request__) */

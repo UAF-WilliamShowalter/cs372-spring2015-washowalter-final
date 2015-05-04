@@ -21,15 +21,7 @@ public:
 				std::string source, std::string dest,
 				std::string message);
 	std::string getType();
-	DIRECTION getDirection();
-	std::string getSource();
-	std::string getDest();
-	std::string getMessage();
 
 private:
-	DIRECTION _direction;
-	std::string _source;
-	std::string _dest;
-	std::string _message;
 };
 #endif /* defined(__Final_WAShowalter__UnsupportedProtocolRequest__) */

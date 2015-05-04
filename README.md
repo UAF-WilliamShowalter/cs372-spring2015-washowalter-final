@@ -10,6 +10,12 @@ A "Request" (network datagram, in this example) goes through a chain of handlers
 
 NullHandler is an implementation of the Null Object design pattern.
 
+##Limitations
+
+The Handlers only output their handling to a logging observer, and do not apply their own filtering rules, as a real firewall filter would. My initial idea was to have each of the handler chains send the traffic down its own rule chain, so you would have the protocol/direction chains of responsibility and then the rule chains of responsibility. However, that would be a lot more work, and would break all of the tests in catch, and make adding new tests very complicated.
+
+Logging also only logs the fact that it was processed by a handler and not passed on. It does not log the message details (source, destination, message, etc).
+
 #Instructions:
 This project includes submodules, so you should perform clones recursively.
 

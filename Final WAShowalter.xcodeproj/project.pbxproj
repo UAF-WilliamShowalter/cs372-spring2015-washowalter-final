@@ -13,10 +13,20 @@
 		3D25D8DB1AF6E9CB00E72D67 /* NullHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D25D8D91AF6E9CB00E72D67 /* NullHandler.cpp */; };
 		3D25D8DE1AF6ED3D00E72D67 /* IPv4Request.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D25D8DC1AF6ED3D00E72D67 /* IPv4Request.cpp */; };
 		3D25D8E11AF6F00D00E72D67 /* IPv6Request.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D25D8DF1AF6F00D00E72D67 /* IPv6Request.cpp */; };
+		3D25D8F11AF6F68300E72D67 /* CatchMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D25D8E41AF6F43600E72D67 /* CatchMain.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		3D25D8C51AF6DC7D00E72D67 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		3D25D8E81AF6F67500E72D67 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -40,10 +50,20 @@
 		3D25D8DD1AF6ED3D00E72D67 /* IPv4Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IPv4Request.h; path = Requests/IPv4Request.h; sourceTree = "<group>"; };
 		3D25D8DF1AF6F00D00E72D67 /* IPv6Request.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IPv6Request.cpp; path = Requests/IPv6Request.cpp; sourceTree = "<group>"; };
 		3D25D8E01AF6F00D00E72D67 /* IPv6Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IPv6Request.h; path = Requests/IPv6Request.h; sourceTree = "<group>"; };
+		3D25D8E41AF6F43600E72D67 /* CatchMain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CatchMain.cpp; path = "Observer & Testing/CatchMain.cpp"; sourceTree = "<group>"; };
+		3D25D8EA1AF6F67500E72D67 /* Final WAShowalter Catch */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Final WAShowalter Catch"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D25D8F21AF6F74300E72D67 /* catch.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = catch.hpp; path = Catch/single_include/catch.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3D25D8C41AF6DC7D00E72D67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D25D8E71AF6F67500E72D67 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -65,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				3D25D8C71AF6DC7D00E72D67 /* Final WAShowalter */,
+				3D25D8EA1AF6F67500E72D67 /* Final WAShowalter Catch */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,8 +93,9 @@
 		3D25D8C91AF6DC7D00E72D67 /* Final WAShowalter */ = {
 			isa = PBXGroup;
 			children = (
-				3D25D8D21AF6E64900E72D67 /* Requests */,
 				3D25D8D11AF6E64000E72D67 /* Handlers */,
+				3D25D8D21AF6E64900E72D67 /* Requests */,
+				3D25D8E21AF6F32400E72D67 /* Observer & Testing */,
 				3D25D8CA1AF6DC7D00E72D67 /* main.cpp */,
 			);
 			path = "Final WAShowalter";
@@ -103,6 +125,15 @@
 			name = Requests;
 			sourceTree = "<group>";
 		};
+		3D25D8E21AF6F32400E72D67 /* Observer & Testing */ = {
+			isa = PBXGroup;
+			children = (
+				3D25D8F21AF6F74300E72D67 /* catch.hpp */,
+				3D25D8E41AF6F43600E72D67 /* CatchMain.cpp */,
+			);
+			name = "Observer & Testing";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -123,6 +154,23 @@
 			productReference = 3D25D8C71AF6DC7D00E72D67 /* Final WAShowalter */;
 			productType = "com.apple.product-type.tool";
 		};
+		3D25D8E91AF6F67500E72D67 /* Final WAShowalter Catch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D25D8EE1AF6F67500E72D67 /* Build configuration list for PBXNativeTarget "Final WAShowalter Catch" */;
+			buildPhases = (
+				3D25D8E61AF6F67500E72D67 /* Sources */,
+				3D25D8E71AF6F67500E72D67 /* Frameworks */,
+				3D25D8E81AF6F67500E72D67 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Final WAShowalter Catch";
+			productName = "Final WAShowalter Catch";
+			productReference = 3D25D8EA1AF6F67500E72D67 /* Final WAShowalter Catch */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -133,6 +181,9 @@
 				ORGANIZATIONNAME = "William Showalter";
 				TargetAttributes = {
 					3D25D8C61AF6DC7D00E72D67 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					3D25D8E91AF6F67500E72D67 = {
 						CreatedOnToolsVersion = 6.3.1;
 					};
 				};
@@ -150,6 +201,7 @@
 			projectRoot = "";
 			targets = (
 				3D25D8C61AF6DC7D00E72D67 /* Final WAShowalter */,
+				3D25D8E91AF6F67500E72D67 /* Final WAShowalter Catch */,
 			);
 		};
 /* End PBXProject section */
@@ -165,6 +217,14 @@
 				3D25D8DE1AF6ED3D00E72D67 /* IPv4Request.cpp in Sources */,
 				3D25D8D51AF6E67200E72D67 /* Handler.cpp in Sources */,
 				3D25D8CB1AF6DC7D00E72D67 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D25D8E61AF6F67500E72D67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D25D8F11AF6F68300E72D67 /* CatchMain.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +324,26 @@
 			};
 			name = Release;
 		};
+		3D25D8EF1AF6F67500E72D67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3D25D8F01AF6F67500E72D67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -281,6 +361,14 @@
 			buildConfigurations = (
 				3D25D8CF1AF6DC7D00E72D67 /* Debug */,
 				3D25D8D01AF6DC7D00E72D67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3D25D8EE1AF6F67500E72D67 /* Build configuration list for PBXNativeTarget "Final WAShowalter Catch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D25D8EF1AF6F67500E72D67 /* Debug */,
+				3D25D8F01AF6F67500E72D67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

@@ -1,0 +1,3 @@
+[submodule "Final WAShowalter/Catch"]
+	path = Final WAShowalter/Catch
+	url = https://github.com/philsquared/Catch.git

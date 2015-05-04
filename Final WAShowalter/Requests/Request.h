@@ -12,11 +12,13 @@
 #include <stdio.h>
 #include <string>
 
+enum DIRECTION {INPUT, OUTPUT, FORWARD};
+
 class Request {
 public:
 	virtual ~Request() = default;
 	virtual std::string getType() = 0;
-	virtual std::string getDirection() = 0;
+	virtual DIRECTION getDirection() = 0;
 	virtual std::string getSource() = 0;
 	virtual std::string getDest() = 0;
 	virtual std::string getMessage() = 0;

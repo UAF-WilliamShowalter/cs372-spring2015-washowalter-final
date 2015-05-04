@@ -8,7 +8,7 @@
 
 #include "IPv6Request.h"
 
-IPv6Request::IPv6Request(std::string direction,
+IPv6Request::IPv6Request(DIRECTION direction,
 						 std::string source, std::string dest,
 						 std::string message):_direction(direction),
 _source(source),_dest(dest),_message(message){}
@@ -16,7 +16,7 @@ _source(source),_dest(dest),_message(message){}
 std::string IPv6Request::getType() {
 	return "IPv6";
 }
-std::string IPv6Request::getDirection() {
+DIRECTION IPv6Request::getDirection() {
 	return _direction;
 }
 std::string IPv6Request::getSource() {

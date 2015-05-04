@@ -8,7 +8,7 @@
 
 #include "IPv4Request.h"
 
-IPv4Request::IPv4Request(std::string direction,
+IPv4Request::IPv4Request(DIRECTION direction,
 			std::string source, std::string dest,
 			std::string message):_direction(direction),
 			_source(source),_dest(dest),_message(message){}
@@ -16,7 +16,7 @@ IPv4Request::IPv4Request(std::string direction,
 std::string IPv4Request::getType() {
 	return "IPv4";
 }
-std::string IPv4Request::getDirection() {
+DIRECTION IPv4Request::getDirection() {
 	return _direction;
 }
 std::string IPv4Request::getSource() {

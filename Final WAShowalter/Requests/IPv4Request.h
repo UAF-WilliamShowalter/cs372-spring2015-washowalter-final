@@ -14,17 +14,17 @@
 
 class IPv4Request : public Request {
 public:
-	IPv4Request(std::string direction,
+	IPv4Request(DIRECTION direction,
 				std::string source, std::string dest,
 				std::string message);
 	std::string getType();
-	std::string getDirection();
+	DIRECTION getDirection();
 	std::string getSource();
 	std::string getDest();
 	std::string getMessage();
 
 private:
-	std::string _direction;
+	DIRECTION _direction;
 	std::string _source;
 	std::string _dest;
 	std::string _message;

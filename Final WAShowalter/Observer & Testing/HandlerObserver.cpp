@@ -11,6 +11,11 @@
 void HandlerObserver::notify (std::string newLog){
 	_logs << newLog << std::endl;
 }
+
 std::string HandlerObserver::getLogs (){
 	return _logs.str();
+}
+
+void HandlerObserver::clearLogs() {
+	_logs = std::stringstream();
 }

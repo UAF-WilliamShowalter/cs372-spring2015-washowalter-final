@@ -22,6 +22,7 @@ class HandlerObserver {
 public:
 	void notify (std::string newLog);
 	std::string getLogs ();
+	void clearLogs();
 private:
 	std::stringstream _logs;
 };

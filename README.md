@@ -13,11 +13,11 @@ NullHandler is an implementation of the Null Object design pattern.
 #Instructions:
 This project includes submodules, so you should perform clones recursively.
 
-`git clone --recursive https://github.com/williamshowalter/DOTlog_iOS.git`
+`git clone --recursive https://github.alaska.edu/washowalter/cs372-spring2015-washowalter-final.git`
 
 or
 
-`git clone --recursive git@github.com:williamshowalter/DOTlog_iOS.git`
+`git clone --recursive git@github.alaska.edu/washowalter/cs372-spring2015-washowalter-final.git`
 
 If you clone without the recursive option, you will need to manually initialize the SwiftyJSON submodule:
 

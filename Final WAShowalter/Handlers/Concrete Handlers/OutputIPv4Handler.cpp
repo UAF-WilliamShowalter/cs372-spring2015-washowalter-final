@@ -19,11 +19,3 @@ void OutputIPv4Handler::handleRequest(std::unique_ptr<Request> r) {
 		_successor->handleRequest(std::move(r));
 	}
 }
-
-void OutputIPv4Handler::registerLogObserver(std::shared_ptr<HandlerObserver> observer) {
-	_logObserver = observer;
-}
-
-void OutputIPv4Handler::setSuccessor(std::unique_ptr<Handler> r) {
-	_successor = move(r);
-}

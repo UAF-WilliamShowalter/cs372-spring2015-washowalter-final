@@ -19,11 +19,3 @@ void InputIPv6Handler::handleRequest(std::unique_ptr<Request> r) {
 		_successor->handleRequest(std::move(r));
 	}
 }
-
-void InputIPv6Handler::registerLogObserver(std::shared_ptr<HandlerObserver> observer) {
-	_logObserver = observer;
-}
-
-void InputIPv6Handler::setSuccessor(std::unique_ptr<Handler> r) {
-	_successor = move(r);
-}

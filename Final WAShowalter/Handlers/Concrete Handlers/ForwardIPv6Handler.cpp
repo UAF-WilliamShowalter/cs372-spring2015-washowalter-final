@@ -19,11 +19,3 @@ void ForwardIPv6Handler::handleRequest(std::unique_ptr<Request> r) {
 		_successor->handleRequest(std::move(r));
 	}
 }
-
-void ForwardIPv6Handler::registerLogObserver(std::shared_ptr<HandlerObserver> observer) {
-	_logObserver = observer;
-}
-
-void ForwardIPv6Handler::setSuccessor(std::unique_ptr<Handler> r) {
-	_successor = move(r);
-}

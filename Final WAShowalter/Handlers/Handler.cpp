@@ -7,3 +7,11 @@
 //
 
 #include "Handler.h"
+
+void Handler::registerLogObserver(std::shared_ptr<HandlerObserver> observer) {
+	_logObserver = observer;
+}
+
+void Handler::setSuccessor(std::unique_ptr<Handler> r) {
+	_successor = move(r);
+}

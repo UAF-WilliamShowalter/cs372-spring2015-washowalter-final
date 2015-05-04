@@ -15,9 +15,9 @@ void ForwardIPv6Handler::handleRequest(std::unique_ptr<Request> r) {
 		_logObserver->notify("Handled by ForwardIPv6Handler");
 	}
 	else {
-		std::unique_ptr<Handler> nullHandler = std::make_unique<NullHandler>();
-		nullHandler->registerLogObserver(_logObserver);
-		nullHandler->handleRequest(std::move(r));
+		std::unique_ptr<Handler> nextHandler = std::make_unique<NullHandler>();
+		nextHandler->registerLogObserver(_logObserver);
+		nextHandler->handleRequest(std::move(r));
 	}
 }
 

@@ -7,17 +7,17 @@
 //
 
 #include "OutputIPv4Handler.h"
-#include "NullHandler.h"
+#include "OutputIPv6Handler.h"
 #include <memory>
 
 void OutputIPv4Handler::handleRequest(std::unique_ptr<Request> r) {
-	if (r->getType() == "IPv6" && r->getDirection() == FORWARD){
-		_logObserver->notify("Request fell of end of chain: ");
+	if (r->getType() == "IPv4" && r->getDirection() == OUTPUT){
+		_logObserver->notify("Handled by OutputIPv4Handler");
 	}
 	else {
-		std::unique_ptr<Handler> nullHandler = std::make_unique<NullHandler>();
-		nullHandler->registerLogObserver(_logObserver);
-		nullHandler->handleRequest(std::move(r));
+		std::unique_ptr<Handler> nextHandler = std::make_unique<OutputIPv6Handler>();
+		nextHandler->registerLogObserver(_logObserver);
+		nextHandler->handleRequest(std::move(r));
 	}
 }
 

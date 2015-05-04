@@ -33,6 +33,8 @@
 		3D25D9101AF7039500E72D67 /* ForwardIPv4Handler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D25D90D1AF7039500E72D67 /* ForwardIPv4Handler.cpp */; };
 		3D25D9131AF703AE00E72D67 /* ForwardIPv6Handler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D25D9111AF703AE00E72D67 /* ForwardIPv6Handler.cpp */; };
 		3D25D9141AF703AE00E72D67 /* ForwardIPv6Handler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D25D9111AF703AE00E72D67 /* ForwardIPv6Handler.cpp */; };
+		3D25D9171AF70BF400E72D67 /* UnsupportedProtocolRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D25D9151AF70BF400E72D67 /* UnsupportedProtocolRequest.cpp */; };
+		3D25D9181AF70BF400E72D67 /* UnsupportedProtocolRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D25D9151AF70BF400E72D67 /* UnsupportedProtocolRequest.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -86,6 +88,8 @@
 		3D25D90E1AF7039500E72D67 /* ForwardIPv4Handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ForwardIPv4Handler.h; path = "Handlers/Concrete Handlers/ForwardIPv4Handler.h"; sourceTree = "<group>"; };
 		3D25D9111AF703AE00E72D67 /* ForwardIPv6Handler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ForwardIPv6Handler.cpp; path = "Handlers/Concrete Handlers/ForwardIPv6Handler.cpp"; sourceTree = "<group>"; };
 		3D25D9121AF703AE00E72D67 /* ForwardIPv6Handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ForwardIPv6Handler.h; path = "Handlers/Concrete Handlers/ForwardIPv6Handler.h"; sourceTree = "<group>"; };
+		3D25D9151AF70BF400E72D67 /* UnsupportedProtocolRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = UnsupportedProtocolRequest.cpp; path = Requests/UnsupportedProtocolRequest.cpp; sourceTree = "<group>"; };
+		3D25D9161AF70BF400E72D67 /* UnsupportedProtocolRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UnsupportedProtocolRequest.h; path = Requests/UnsupportedProtocolRequest.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +159,8 @@
 				3D25D8DD1AF6ED3D00E72D67 /* IPv4Request.h */,
 				3D25D8DF1AF6F00D00E72D67 /* IPv6Request.cpp */,
 				3D25D8E01AF6F00D00E72D67 /* IPv6Request.h */,
+				3D25D9151AF70BF400E72D67 /* UnsupportedProtocolRequest.cpp */,
+				3D25D9161AF70BF400E72D67 /* UnsupportedProtocolRequest.h */,
 			);
 			name = Requests;
 			sourceTree = "<group>";
@@ -269,6 +275,7 @@
 				3D25D9071AF7037600E72D67 /* OutputIPv4Handler.cpp in Sources */,
 				3D25D9131AF703AE00E72D67 /* ForwardIPv6Handler.cpp in Sources */,
 				3D25D90F1AF7039500E72D67 /* ForwardIPv4Handler.cpp in Sources */,
+				3D25D9171AF70BF400E72D67 /* UnsupportedProtocolRequest.cpp in Sources */,
 				3D25D8E11AF6F00D00E72D67 /* IPv6Request.cpp in Sources */,
 				3D25D8D81AF6E6E300E72D67 /* Request.cpp in Sources */,
 				3D25D9031AF7036A00E72D67 /* InputIPv6Handler.cpp in Sources */,
@@ -289,6 +296,7 @@
 				3D25D9081AF7037600E72D67 /* OutputIPv4Handler.cpp in Sources */,
 				3D25D9141AF703AE00E72D67 /* ForwardIPv6Handler.cpp in Sources */,
 				3D25D9101AF7039500E72D67 /* ForwardIPv4Handler.cpp in Sources */,
+				3D25D9181AF70BF400E72D67 /* UnsupportedProtocolRequest.cpp in Sources */,
 				3D25D8F81AF6FC6F00E72D67 /* IPv4Request.cpp in Sources */,
 				3D25D8F91AF6FC7100E72D67 /* Request.cpp in Sources */,
 				3D25D9041AF7036A00E72D67 /* InputIPv6Handler.cpp in Sources */,

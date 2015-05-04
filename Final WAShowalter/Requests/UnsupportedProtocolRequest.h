@@ -13,6 +13,9 @@
 #include "Request.h"
 
 class UnsupportedProtocolRequest : public Request {
+/*
+ A protocol none of the firewall handlers know how to handle.
+ */
 public:
 	UnsupportedProtocolRequest(DIRECTION direction,
 				std::string source, std::string dest,

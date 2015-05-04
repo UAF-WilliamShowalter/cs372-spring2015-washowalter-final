@@ -13,6 +13,11 @@
 #include <string>
 #include <sstream>
 
+/*
+ Takes logs from "Firewall" handlers about their actions. 
+ Emulates a syslog service used by the handlers.
+*/
+
 class HandlerObserver {
 public:
 	void notify (std::string newLog);

@@ -15,12 +15,15 @@ void InputIPv4Handler::handleRequest(std::unique_ptr<Request> r) {
 		_logObserver->notify("Handled by InputIPv4Handler");
 	}
 	else {
-		std::unique_ptr<Handler> nextHandler = std::make_unique<InputIPv6Handler>();
-		nextHandler->registerLogObserver(_logObserver);
-		nextHandler->handleRequest(std::move(r));
+		_successor->registerLogObserver(_logObserver);
+		_successor->handleRequest(std::move(r));
 	}
 }
 
 void InputIPv4Handler::registerLogObserver(std::shared_ptr<HandlerObserver> observer) {
 	_logObserver = observer;
+}
+
+void InputIPv4Handler::setSuccessor(std::unique_ptr<Handler> r) {
+	_successor = move(r);
 }

@@ -13,6 +13,11 @@
 #include "Request.h"
 
 class IPv4Request : public Request {
+	/*
+	 Because this example uses strings for all fields, IPv4 and IPv6 are identical.
+	 But a fully flushed out version would have 32-bit address fields in IPv4 and
+		128bit address fields in IPv6, along with other changes.
+	 */
 public:
 	IPv4Request(DIRECTION direction,
 				std::string source, std::string dest,

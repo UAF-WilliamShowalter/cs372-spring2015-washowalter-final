@@ -13,8 +13,13 @@
 #include "Handler.h"
 
 class NullHandler : public Handler {
+	/*
+	 Null Object design pattern.
+	 Handler to be set as successor when there is no next handler.
+	 */
 public:
 	void handleRequest(std::unique_ptr<Request> r);
+	void setSuccessor(std::unique_ptr<Handler> r);
 	void registerLogObserver(std::shared_ptr<HandlerObserver>);
 
 private:

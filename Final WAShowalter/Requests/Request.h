@@ -13,6 +13,9 @@
 #include <string>
 
 enum DIRECTION {INPUT, OUTPUT, FORWARD};
+/*
+ Types for getSource, getDest would be of an abstract Address classes to support IPv4 & IPv6
+ */
 
 class Request {
 public:

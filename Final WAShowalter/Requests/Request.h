@@ -21,10 +21,10 @@ class Request {
 public:
 	virtual ~Request() = default;
 	virtual std::string getType() = 0;
-	virtual DIRECTION getDirection();
-	virtual std::string getSource();
-	virtual std::string getDest();
-	virtual std::string getMessage();
+	DIRECTION getDirection();
+	std::string getSource();
+	std::string getDest();
+	std::string getMessage();
 
 	void setDirection(DIRECTION);
 	void setSource(std::string);
